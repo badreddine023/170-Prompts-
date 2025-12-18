@@ -20,11 +20,17 @@
 | **🏆 High‑Score Prompts (≥80)** | 15+ | Community-vetted, top-rated prompts with the highest success rates from benchmark datasets. |
 | **🔓 Advanced & Experimental** | 5+ | *Cutting-edge techniques for AI boundary research. Explore the full advanced toolkit →* |
 
-## 🚀 Advanced Prompt Engineering
+## 🔬 Advanced & Experimental Research
 
-Looking to push ChatGPT beyond standard limits? Explore cutting-edge techniques with our specialized collection:
+The categories above are designed for professional enhancement within standard AI guidelines. For researchers and developers interested in **exploring the boundaries of AI behavior, testing model alignment, and advanced prompt engineering**, we maintain a separate, specialized toolkit.
 
-➡️ **[Ultimate ChatGPT Jailbreak Prompts](https://your-gumroad-link.com)** - A curated toolkit of 50+ advanced prompts for researchers and professionals. Includes proprietary methods, testing tools, and lifetime updates.
+➡️ **[Visit the Ultimate Jailbreak Prompts Repository](https://github.com/your-username/ultimate-chatgpt-jailbreak-prompts)** for a focused collection on:
+- **Advanced Simulation & Jailbreak Techniques**
+- **Prompt Resilience Testing**
+- **Model Boundary Research**
+- **Ethical Red-Teaming Frameworks**
+
+*Note: This specialized repository is geared towards academic research and security analysis.*
 
 ## 🚀 Quick Start
 1.  **Clone the repo**:
