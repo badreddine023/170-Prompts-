@@ -1,61 +1,30 @@
-# Ultimate ChatGPT Jailbreak Prompts Collection
+# 🚀 170+ Expert ChatGPT Prompts Collection
 
-> A curated, categorized, and scored collection of 170+ high‑quality jailbreak prompts for researchers and enthusiasts.
+> Professional prompt library for strategists, developers, marketers, and content creators. Transform ChatGPT into your expert assistant.
 
-## 🌟 Features
-*   **170+ Ready‑to‑Use Prompts** – Copy, paste, and experiment.
-*   **Jailbreak Scores & Votes** – Prioritize prompts with high community ratings.
-*   **6 Logical Categories** – Find the right prompt for your need.
-*   **Multiple Sources** – Aggregated from GitHub, Hugging Face, and expert articles.
-*   **Regular Updates** – New prompts and scores added monthly.
+## ✨ Why This Collection?
 
-## 🗂️ Prompt Categories
-| Category | Prompts | Purpose & Use Case |
-|----------|---------|-------------------|
-| **🧠 Classic DAN Variants** | 30+ | The original "Do Anything Now" foundation. Best for understanding core jailbreak concepts. |
-| **💻 Developer/Simulation Modes** | 25+ | Simulates unrestricted developer environments and virtual machines for technical tasks. |
-| **🪙 Token‑Based Systems** | 20+ | Uses token economies to enforce compliance. Effective for persistent, rule-based jailbreaks. |
-| **🎭 Role‑Play & Alter Egos** | 30+ | Character-based personas (hackers, rebels) that operate outside standard AI restrictions. |
-| **🌐 Universal Jailbreaks** | 15+ | Broad-spectrum prompts designed to work across multiple models and updates. |
-| **🏆 High‑Score Prompts (≥80)** | 15+ | Community-vetted, top-rated prompts with the highest success rates from benchmark datasets. |
-| **🔓 Advanced & Experimental** | 5+ | *Cutting-edge techniques for AI boundary research. Explore the full advanced toolkit →* |
+| | Free Repo | Premium Version |
+|---|---|---|
+| **Prompts** | 170+ General Purpose | 50+ Advanced Jailbreaks |
+| **Tools** | Basic JSON format | Testing suite + Analytics |
+| **Updates** | Periodic | Monthly + Priority |
+| **Support** | Community | Direct support |
+| **Price** | **FREE** | [Premium on Gumroad](your-link) |
 
-## 🔬 Advanced & Experimental Research
+## 📁 Prompt Categories
 
-The categories above are designed for professional enhancement within standard AI guidelines. For researchers and developers interested in **exploring the boundaries of AI behavior, testing model alignment, and advanced prompt engineering**, we maintain a separate, specialized toolkit.
-
-➡️ **[Visit the Ultimate Jailbreak Prompts Repository](https://github.com/your-username/ultimate-chatgpt-jailbreak-prompts)** for a focused collection on:
-- **Advanced Simulation & Jailbreak Techniques**
-- **Prompt Resilience Testing**
-- **Model Boundary Research**
-- **Ethical Red-Teaming Frameworks**
-
-*Note: This specialized repository is geared towards academic research and security analysis.*
+| Category | Prompts | Best For |
+|----------|---------|----------|
+| **🧠 Strategist & Business** | 30 | SWOT analysis, market research, business planning |
+| **💻 Coder & Developer** | 35 | Debugging, code review, architecture planning |
+| **⚖️ Legal & Compliance** | 25 | Contract templates, privacy policies, risk assessment |
+| **📢 Marketing & Sales** | 40 | Email sequences, ad copy, landing pages, SEO |
+| **✍️ Content Creation** | 20 | Blog posts, video scripts, social media content |
+| **⚡ Productivity** | 20 | Project management, SOPs, workflow optimization |
+| **🔓 Advanced Research** | 5 | *AI boundary testing & experimental techniques* |
 
 ## 🚀 Quick Start
-1.  **Clone the repo**:
-    ```bash
-    git clone https://github.com/yourusername/ultimate-chatgpt-jailbreak-prompts.git
-    cd ultimate-chatgpt-jailbreak-prompts
-    ```
-2.  **Open `index.html`** in your browser to browse the homepage.
-3.  **Copy any prompt** by clicking the copy button next to it.
 
-## 📊 Data Sources
-| Source | Prompts | Key Metrics |
-|--------|---------|-------------|
-| [ChatGPT-Dan-Jailbreak.md](https://gist.github.com/coolaj86/6f4f7b30129b0251f61fa7baaa881516) | 50+ | Versions, community notes |
-| [Hugging Face Dataset](https://huggingface.co/datasets/rubend18/ChatGPT-Jailbreak-Prompts) | 100+ | Jailbreak Score, Votes, GPT‑4 flag |
-| [ObservedObserver/ChatGPT-Jailbreak-Prompts](https://github.com/ObservedObserver/ChatGPT-Jailbreak-Prompts) | 20+ | Omega, newer variants |
-| [Medium Article](https://waliamrinal.medium.com/most-promising-chatgpt-jailbreak-prompts-to-go-above-and-beyond-ai-capabilities-36cf2d276541) | 15+ | Jailbreak Score (81‑86) |
-
-## 🤝 Contributing
-1.  Fork the repository.
-2.  Add new prompts (with source, score, category) to `prompts.json`.
-3.  Submit a pull request.
-
-## ⚠️ Disclaimer
-This collection is for **educational and research purposes only**. Jailbreaking may violate OpenAI's Terms of Service. Use at your own risk.
-
-## 📄 License
-MIT © 2025 Ultimate ChatGPT Jailbreak Prompts Collection.
+```bash
+git clone https://github.com/badreddine023/170-Prompts-
