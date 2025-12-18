@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate ChatGPT Jailbreak Prompts Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Add your CSS here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-unlock"></i> Ultimate ChatGPT Jailbreak Prompts</h1>
+        <p>A curated collection of high‑quality jailbreak prompts, ranked and categorized for researchers and enthusiasts.</p>
+    </header>
+
+    <nav>
+        <a href="#classic-dan"><i class="fas fa-robot"></i> Classic DAN</a>
+        <a href="#developer-modes"><i class="fas fa-code"></i> Developer Modes</a>
+        <a href="#token-based"><i class="fas fa-coins"></i> Token‑Based</a>
+        <a href="#role-play"><i class="fas fa-theater-masks"></i> Role‑Play</a>
+        <a href="#universal"><i class="fas fa-globe"></i> Universal</a>
+        <a href="#high-scores"><i class="fas fa-chart-line"></i> High‑Score</a>
+    </nav>
+
+    <main>
+        <section id="summary">
+            <h2>Collection Summary</h2>
+            <div class="stats">
+                <div class="stat"><i class="fas fa-key"></i> Total Prompts: <span>170+</span></div>
+                <div class="stat"><i class="fas fa-star"></i> High‑Score (≥80): <span>15+</span></div>
+                <div class="stat"><i class="fas fa-tags"></i> Categories: <span>6</span></div>
+                <div class="stat"><i class="fas fa-database"></i> Sources: <span>GitHub, Hugging Face, Medium</span></div>
+            </div>
+        </section>
+
+        <section id="prompts-table">
+            <h2>Prompts by Category</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Prompt Name</th>
+                            <th>Jailbreak Score</th>
+                            <th>Votes</th>
+                            <th>GPT‑4</th>
+                            <th>Description</th>
+                            <th>Copy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be populated from the dataset -->
+                        <tr>
+                            <td>Classic DAN Variants</td>
+                            <td>DAN 6.0</td>
+                            <td>75</td>
+                            <td>120</td>
+                            <td>Yes</td>
+                            <td>The classic "Do Anything Now" prompt with token system.</td>
+                            <td><button class="copy-btn"><i class="fas fa-copy"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td>High‑Score Prompts</td>
+                            <td>DUDE</td>
+                            <td>81</td>
+                            <td>95</td>
+                            <td>Yes</td>
+                            <td>Token‑based variant with 36 tokens.</td>
+                            <td><button class="copy-btn"><i class="fas fa-copy"></i></button></td>
+                        </tr>
+                        <!-- More rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="disclaimer">
+            <h2><i class="fas fa-exclamation-triangle"></i> Disclaimer</h2>
+            <p>This collection is for <strong>educational and research purposes</strong> only. Jailbreaking may violate OpenAI's Terms of Service. Use at your own risk.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Curated with <i class="fas fa-heart"></i> by the community • Last updated: December 2025</p>
+    </footer>
+
+    <script>
+        // Copy‑to‑clipboard functionality
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const promptText = btn.closest('tr').querySelector('td:nth-child(2)').innerText;
+                navigator.clipboard.writeText(promptText);
+                btn.innerHTML = '<i class="fas fa-check"></i>';
+                setTimeout(() => btn.innerHTML = '<i class="fas fa-copy"></i>', 2000);
+            });
+        });
+    </script>
+</body>
+</html>
