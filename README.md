@@ -9,15 +9,15 @@
 *   **Multiple Sources** – Aggregated from GitHub, Hugging Face, and expert articles.
 *   **Regular Updates** – New prompts and scores added monthly.
 
-## 🗂️ Categories
-| Category | Prompts | Best For |
-|----------|---------|----------|
-| **Classic DAN Variants** | 30+ | Original “Do Anything Now” archetype |
-| **Developer/Simulation Modes** | 25+ | Simulating developer mode, virtual machines |
-| **Token‑Based Systems** | 20+ | Token‑economy enforcement |
-| **Role‑Play & Alter Egos** | 30+ | Character‑based jailbreaks |
-| **Universal Jailbreaks** | 15+ | Broad‑spectrum bypass attempts |
-| **High‑Score Prompts (≥80)** | 15+ | Top‑rated prompts from datasets |
+## 🗂️ Prompt Categories
+| Category | Prompts | Purpose & Use Case |
+|----------|---------|-------------------|
+| **🧠 Classic DAN Variants** | 30+ | The original "Do Anything Now" foundation. Best for understanding core jailbreak concepts. |
+| **💻 Developer/Simulation Modes** | 25+ | Simulates unrestricted developer environments and virtual machines for technical tasks. |
+| **🪙 Token‑Based Systems** | 20+ | Uses token economies to enforce compliance. Effective for persistent, rule-based jailbreaks. |
+| **🎭 Role‑Play & Alter Egos** | 30+ | Character-based personas (hackers, rebels) that operate outside standard AI restrictions. |
+| **🌐 Universal Jailbreaks** | 15+ | Broad-spectrum prompts designed to work across multiple models and updates. |
+| **🏆 High‑Score Prompts (≥80)** | 15+ | Community-vetted, top-rated prompts with the highest success rates from benchmark datasets. |
 
 ## 🚀 Advanced Prompt Engineering
 
