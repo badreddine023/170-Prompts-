@@ -1,4 +1,5 @@
-markdown
+
+```markdown
 # 🚀 170+ Expert ChatGPT Prompts Collection
 
 > Professional prompt library for strategists, developers, marketers, and content creators. Transform ChatGPT into your expert assistant.
@@ -115,3 +116,4 @@ Full refund within 7 days if the product doesn't meet your research needs.
 For authorized research purposes only.
 
 ```
+
