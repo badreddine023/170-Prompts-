@@ -1,5 +1,5 @@
-
-```markdown
+'''
+markdown
 # 🚀 170+ Expert ChatGPT Prompts Collection
 
 > Professional prompt library for strategists, developers, marketers, and content creators. Transform ChatGPT into your expert assistant.
