@@ -18,6 +18,7 @@
 | **🎭 Role‑Play & Alter Egos** | 30+ | Character-based personas (hackers, rebels) that operate outside standard AI restrictions. |
 | **🌐 Universal Jailbreaks** | 15+ | Broad-spectrum prompts designed to work across multiple models and updates. |
 | **🏆 High‑Score Prompts (≥80)** | 15+ | Community-vetted, top-rated prompts with the highest success rates from benchmark datasets. |
+| **🔓 Advanced & Experimental** | 5+ | *Cutting-edge techniques for AI boundary research. Explore the full advanced toolkit →* |
 
 ## 🚀 Advanced Prompt Engineering
 
