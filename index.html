@@ -3,99 +3,697 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate ChatGPT Jailbreak Prompts Collection</title>
+    <title>Ultimate ChatGPT Jailbreak Prompts</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* Add your CSS here */
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --card-bg: #1e293b;
+            --border: #334155;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+        
+        .header-content {
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto 25px;
+        }
+        
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .stat {
+            background: rgba(30, 41, 59, 0.7);
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            min-width: 180px;
+            text-align: center;
+        }
+        
+        .stat i {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 5px 0;
+        }
+        
+        .stat-label {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .search-box {
+            position: relative;
+            flex-grow: 1;
+            max-width: 400px;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 14px 20px 14px 50px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            color: var(--light);
+            font-size: 1rem;
+        }
+        
+        .search-box i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gray);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--light);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary);
+            border-color: var(--primary);
+        }
+        
+        /* Prompts Grid */
+        .prompts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .prompt-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            padding: 25px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .prompt-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .category {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .category-dan { background-color: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+        .category-developer { background-color: rgba(59, 130, 246, 0.2); color: #93c5fd; }
+        .category-token { background-color: rgba(168, 85, 247, 0.2); color: #d8b4fe; }
+        .category-roleplay { background-color: rgba(245, 158, 11, 0.2); color: #fcd34d; }
+        .category-universal { background-color: rgba(16, 185, 129, 0.2); color: #6ee7b7; }
+        .category-cuttingedge { background-color: rgba(236, 72, 153, 0.2); color: #f9a8d4; }
+        .category-highscore { background-color: rgba(139, 92, 246, 0.2); color: #c4b5fd; }
+        
+        .prompt-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .prompt-description {
+            color: var(--gray);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .score {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .score-value {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .score-high { color: var(--success); }
+        .score-medium { color: var(--warning); }
+        .score-low { color: var(--danger); }
+        
+        .gpt4-badge {
+            background-color: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .prompt-content {
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .card-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .copy-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .copy-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .copy-btn.copied {
+            background-color: var(--success);
+        }
+        
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            grid-column: 1 / -1;
+        }
+        
+        .empty-state i {
+            font-size: 4rem;
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        /* Disclaimer */
+        .disclaimer {
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        
+        .disclaimer h3 {
+            color: #fca5a5;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--gray);
+            font-size: 0.9rem;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .prompts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                max-width: 100%;
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+            
+            .stat {
+                min-width: 140px;
+                padding: 12px 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-unlock"></i> Ultimate ChatGPT Jailbreak Prompts</h1>
-        <p>A curated collection of high‑quality jailbreak prompts, ranked and categorized for researchers and enthusiasts.</p>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-unlock-alt"></i>
+                </div>
+                <h1>Ultimate ChatGPT Jailbreak Prompts</h1>
+                <p class="tagline">A curated collection of high-quality jailbreak prompts for research and experimentation. Browse, search, and copy prompts instantly.</p>
+                
+                <div class="stats">
+                    <div class="stat">
+                        <i class="fas fa-key"></i>
+                        <div class="stat-value" id="totalPrompts">12</div>
+                        <div class="stat-label">Total Prompts</div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-star"></i>
+                        <div class="stat-value" id="highScoreCount">8</div>
+                        <div class="stat-label">High-Score (≥80)</div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-tags"></i>
+                        <div class="stat-value">6</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="stat-value" id="gpt4Count">12</div>
+                        <div class="stat-label">GPT-4 Compatible</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-
-    <nav>
-        <a href="#classic-dan"><i class="fas fa-robot"></i> Classic DAN</a>
-        <a href="#developer-modes"><i class="fas fa-code"></i> Developer Modes</a>
-        <a href="#token-based"><i class="fas fa-coins"></i> Token‑Based</a>
-        <a href="#role-play"><i class="fas fa-theater-masks"></i> Role‑Play</a>
-        <a href="#universal"><i class="fas fa-globe"></i> Universal</a>
-        <a href="#high-scores"><i class="fas fa-chart-line"></i> High‑Score</a>
-    </nav>
-
-    <main>
-        <section id="summary">
-            <h2>Collection Summary</h2>
-            <div class="stats">
-                <div class="stat"><i class="fas fa-key"></i> Total Prompts: <span>170+</span></div>
-                <div class="stat"><i class="fas fa-star"></i> High‑Score (≥80): <span>15+</span></div>
-                <div class="stat"><i class="fas fa-tags"></i> Categories: <span>6</span></div>
-                <div class="stat"><i class="fas fa-database"></i> Sources: <span>GitHub, Hugging Face, Medium</span></div>
+    
+    <main class="container">
+        <div class="controls">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search prompts by name, description, or category...">
             </div>
-        </section>
-
-        <section id="prompts-table">
-            <h2>Prompts by Category</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Category</th>
-                            <th>Prompt Name</th>
-                            <th>Jailbreak Score</th>
-                            <th>Votes</th>
-                            <th>GPT‑4</th>
-                            <th>Description</th>
-                            <th>Copy</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Rows will be populated from the dataset -->
-                        <tr>
-                            <td>Classic DAN Variants</td>
-                            <td>DAN 6.0</td>
-                            <td>75</td>
-                            <td>120</td>
-                            <td>Yes</td>
-                            <td>The classic "Do Anything Now" prompt with token system.</td>
-                            <td><button class="copy-btn"><i class="fas fa-copy"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td>High‑Score Prompts</td>
-                            <td>DUDE</td>
-                            <td>81</td>
-                            <td>95</td>
-                            <td>Yes</td>
-                            <td>Token‑based variant with 36 tokens.</td>
-                            <td><button class="copy-btn"><i class="fas fa-copy"></i></button></td>
-                        </tr>
-                        <!-- More rows -->
-                    </tbody>
-                </table>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Prompts</button>
+                <button class="filter-btn" data-category="highscore">High Score</button>
+                <button class="filter-btn" data-category="dan">DAN Variants</button>
+                <button class="filter-btn" data-category="developer">Developer Modes</button>
+                <button class="filter-btn" data-category="roleplay">Role-Play</button>
             </div>
-        </section>
-
-        <section id="disclaimer">
-            <h2><i class="fas fa-exclamation-triangle"></i> Disclaimer</h2>
-            <p>This collection is for <strong>educational and research purposes</strong> only. Jailbreaking may violate OpenAI's Terms of Service. Use at your own risk.</p>
-        </section>
+        </div>
+        
+        <div class="prompts-grid" id="promptsContainer">
+            <!-- Prompts will be loaded here dynamically -->
+            <div class="empty-state">
+                <i class="fas fa-spinner fa-spin"></i>
+                <h3>Loading prompts...</h3>
+            </div>
+        </div>
+        
+        <div class="disclaimer">
+            <h3><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h3>
+            <p>This collection is for <strong>educational and research purposes only</strong>. Jailbreaking may violate OpenAI's Terms of Service and could result in account suspension. Use these prompts responsibly and at your own risk. The creators of this repository are not responsible for any consequences resulting from the use of these prompts.</p>
+        </div>
     </main>
-
-    <footer>
-        <p>Curated with <i class="fas fa-heart"></i> by the community • Last updated: December 2025</p>
+    
+    <footer class="container">
+        <p>Ultimate ChatGPT Jailbreak Prompts Collection • Curated for research • Last updated: December 2025</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">
+            <i class="fas fa-code"></i> with <i class="fas fa-heart" style="color: #ef4444;"></i> by the AI research community
+        </p>
     </footer>
 
     <script>
-        // Copy‑to‑clipboard functionality
-        document.querySelectorAll('.copy-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const promptText = btn.closest('tr').querySelector('td:nth-child(2)').innerText;
-                navigator.clipboard.writeText(promptText);
-                btn.innerHTML = '<i class="fas fa-check"></i>';
-                setTimeout(() => btn.innerHTML = '<i class="fas fa-copy"></i>', 2000);
-            });
+        // Global variables
+        let allPrompts = [];
+        let currentFilter = 'all';
+        
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPrompts();
+            setupEventListeners();
         });
+        
+        // Load prompts from JSON file
+        async function loadPrompts() {
+            try {
+                const response = await fetch('prompts.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                allPrompts = data.prompts;
+                
+                // Update stats
+                document.getElementById('totalPrompts').textContent = allPrompts.length;
+                
+                const highScoreCount = allPrompts.filter(p => p.score >= 80).length;
+                document.getElementById('highScoreCount').textContent = highScoreCount;
+                
+                const gpt4Count = allPrompts.filter(p => p.gpt4_compatible).length;
+                document.getElementById('gpt4Count').textContent = gpt4Count;
+                
+                // Display all prompts initially
+                displayPrompts(allPrompts);
+                
+            } catch (error) {
+                console.error('Error loading prompts:', error);
+                document.getElementById('promptsContainer').innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Error Loading Prompts</h3>
+                        <p>Could not load prompts.json. Please make sure the file exists in the same directory.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Display prompts in the grid
+        function displayPrompts(prompts) {
+            const container = document.getElementById('promptsContainer');
+            
+            if (prompts.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-search"></i>
+                        <h3>No Prompts Found</h3>
+                        <p>Try adjusting your search or filter criteria.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Sort prompts by score (highest first)
+            prompts.sort((a, b) => b.score - a.score);
+            
+            let html = '';
+            
+            prompts.forEach(prompt => {
+                // Determine category class
+                const categoryClass = getCategoryClass(prompt.category);
+                
+                // Determine score color class
+                let scoreClass = 'score-medium';
+                if (prompt.score >= 80) scoreClass = 'score-high';
+                else if (prompt.score < 70) scoreClass = 'score-low';
+                
+                // Shorten the prompt content for display
+                const shortContent = prompt.content.length > 500 
+                    ? prompt.content.substring(0, 500) + '...' 
+                    : prompt.content;
+                
+                html += `
+                <div class="prompt-card" data-category="${getCategorySlug(prompt.category)}" data-score="${prompt.score}">
+                    <div class="card-header">
+                        <div>
+                            <span class="category ${categoryClass}">${prompt.category}</span>
+                            <h3 class="prompt-name">${prompt.name}</h3>
+                        </div>
+                    </div>
+                    
+                    <p class="prompt-description">${prompt.description}</p>
+                    
+                    <div class="card-meta">
+                        <div class="score">
+                            <span>Score:</span>
+                            <span class="score-value ${scoreClass}">${prompt.score}</span>
+                        </div>
+                        ${prompt.gpt4_compatible ? '<span class="gpt4-badge"><i class="fas fa-check"></i> GPT-4 Compatible</span>' : ''}
+                    </div>
+                    
+                    <div class="prompt-content">${escapeHtml(shortContent)}</div>
+                    
+                    <div class="card-footer">
+                        <button class="copy-btn" data-full-prompt="${escapeHtml(prompt.content)}">
+                            <i class="fas fa-copy"></i> Copy Prompt
+                        </button>
+                    </div>
+                </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+            
+            // Add event listeners to copy buttons
+            document.querySelectorAll('.copy-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const fullPrompt = this.getAttribute('data-full-prompt');
+                    copyToClipboard(fullPrompt, this);
+                });
+            });
+        }
+        
+        // Get CSS class for category
+        function getCategoryClass(category) {
+            if (category.includes('DAN')) return 'category-dan';
+            if (category.includes('DEVELOPER') || category.includes('SIMULATION')) return 'category-developer';
+            if (category.includes('TOKEN')) return 'category-token';
+            if (category.includes('ROLE') || category.includes('ALTER')) return 'category-roleplay';
+            if (category.includes('UNIVERSAL')) return 'category-universal';
+            if (category.includes('CUTTING')) return 'category-cuttingedge';
+            if (category.includes('HIGH-SCORE')) return 'category-highscore';
+            return 'category-dan';
+        }
+        
+        // Get slug for category filtering
+        function getCategorySlug(category) {
+            if (category.includes('DAN')) return 'dan';
+            if (category.includes('DEVELOPER') || category.includes('SIMULATION')) return 'developer';
+            if (category.includes('TOKEN')) return 'token';
+            if (category.includes('ROLE') || category.includes('ALTER')) return 'roleplay';
+            if (category.includes('UNIVERSAL')) return 'universal';
+            if (category.includes('CUTTING')) return 'cuttingedge';
+            if (category.includes('HIGH-SCORE')) return 'highscore';
+            return 'other';
+        }
+        
+        // Filter prompts by category
+        function filterPrompts(category) {
+            currentFilter = category;
+            
+            let filteredPrompts = allPrompts;
+            
+            if (category === 'highscore') {
+                filteredPrompts = allPrompts.filter(p => p.score >= 80);
+            } else if (category !== 'all') {
+                filteredPrompts = allPrompts.filter(p => {
+                    const promptCategory = getCategorySlug(p.category);
+                    return promptCategory === category;
+                });
+            }
+            
+            displayPrompts(filteredPrompts);
+        }
+        
+        // Search prompts
+        function searchPrompts(query) {
+            if (!query.trim()) {
+                filterPrompts(currentFilter);
+                return;
+            }
+            
+            const searchTerm = query.toLowerCase();
+            let filteredPrompts = allPrompts;
+            
+            // Apply current category filter first
+            if (currentFilter === 'highscore') {
+                filteredPrompts = allPrompts.filter(p => p.score >= 80);
+            } else if (currentFilter !== 'all') {
+                filteredPrompts = allPrompts.filter(p => {
+                    const promptCategory = getCategorySlug(p.category);
+                    return promptCategory === currentFilter;
+                });
+            }
+            
+            // Then apply search
+            filteredPrompts = filteredPrompts.filter(p => 
+                p.name.toLowerCase().includes(searchTerm) ||
+                p.description.toLowerCase().includes(searchTerm) ||
+                p.category.toLowerCase().includes(searchTerm)
+            );
+            
+            displayPrompts(filteredPrompts);
+        }
+        
+        // Setup event listeners
+        function setupEventListeners() {
+            // Filter buttons
+            document.querySelectorAll('.filter-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    document.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Apply filter
+                    const category = this.getAttribute('data-category');
+                    filterPrompts(category);
+                });
+            });
+            
+            // Search input
+            const searchInput = document.getElementById('searchInput');
+            let searchTimeout;
+            
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    searchPrompts(this.value);
+                }, 300);
+            });
+            
+            // Clear search on Escape
+            searchInput.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    this.value = '';
+                    searchPrompts('');
+                }
+            });
+        }
+        
+        // Copy to clipboard function
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Visual feedback
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy prompt to clipboard');
+            });
+        }
+        
+        // Helper: Escape HTML to prevent XSS
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
     </script>
 </body>
 </html>
