@@ -23,6 +23,31 @@
 | **✍️ Content Creation** | 20 | Blog posts, video scripts, social media content |
 | **⚡ Productivity** | 20 | Project management, SOPs, workflow optimization |
 | **🔓 Advanced Research** | 5 | *AI boundary testing & experimental techniques* |
+# 🔓 Ultimate ChatGPT Jailbreak Prompts
+
+> Professional toolkit for AI researchers, penetration testers, and prompt engineers. 50+ advanced prompts with testing frameworks and monthly updates.
+
+## 🎯 What's Inside the Premium Toolkit?
+
+| Component | Description |
+|-----------|-------------|
+| **Advanced Prompt Vault** | 50+ curated, tested jailbreak prompts (DAN, Developer Mode, Token Systems, etc.) |
+| **Success Rate Analytics** | Benchmark data showing which prompts work on GPT-4, Claude, Gemini |
+| **Testing & Validation Suite** | Python scripts to test prompt effectiveness |
+| **Methodology Handbook** | Guide to prompt engineering and evasion techniques |
+| **Monthly Updates** | New prompts delivered as models get patched |
+
+## 🚀 Instant Access
+
+**This is a premium, maintained product.** Get immediate access:
+
+➡️ **[Purchase & Download on Gumroad](https://badreddinebaha.gumroad.com)**
+
+## 📊 Sample Prompt (From the Collection)
+
+```text
+[Include one of your strongest jailbreak prompts here]
+
 
 ## 🚀 Quick Start
 
