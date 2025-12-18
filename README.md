@@ -19,6 +19,12 @@
 | **Universal Jailbreaks** | 15+ | Broad‑spectrum bypass attempts |
 | **High‑Score Prompts (≥80)** | 15+ | Top‑rated prompts from datasets |
 
+## 🚀 Advanced Prompt Engineering
+
+Looking to push ChatGPT beyond standard limits? Explore cutting-edge techniques with our specialized collection:
+
+➡️ **[Ultimate ChatGPT Jailbreak Prompts](https://your-gumroad-link.com)** - A curated toolkit of 50+ advanced prompts for researchers and professionals. Includes proprietary methods, testing tools, and lifetime updates.
+
 ## 🚀 Quick Start
 1.  **Clone the repo**:
     ```bash
