@@ -1,4 +1,3 @@
-'''
 markdown
 # 🚀 170+ Expert ChatGPT Prompts Collection
 
