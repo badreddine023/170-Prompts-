@@ -47,7 +47,48 @@
 
 ```text
 [Include one of your strongest jailbreak prompts here]
+This is one of 50+ advanced prompts in the full toolkit.
 
+❓ Frequently Asked Questions
+
+What's the difference between this and free repositories?
+This is a professionally maintained product with tested prompts, tools, and guaranteed updates. Free repos often contain patched or untested prompts.
+
+Is this legal/ethical?
+The toolkit is intended for authorized security research, AI safety testing, and academic study. Users are responsible for complying with applicable Terms of Service.
+
+What if the prompts get patched?
+The product includes monthly updates with new, tested prompts.
+
+---
+
+© 2025 Ultimate ChatGPT Jailbreak Prompts. A product for security researchers.
+
+```
+
+**B. In its `index.html`**, add a prominent "Buy Now" button in the header or next to your disclaimer:
+```html
+<!-- Add this in your header section -->
+<div style="text-align: center; margin: 20px 0;">
+    <a href="https://badreddinebaha.gumroad.com" 
+       style="background: linear-gradient(90deg, #FF6B6B, #FF8E53); 
+              color: white; 
+              padding: 15px 30px; 
+              border-radius: 50px; 
+              text-decoration: none; 
+              font-weight: bold;
+              font-size: 1.1em;
+              display: inline-block;
+              margin: 10px;">
+        🚀 Get Premium Toolkit on Gumroad
+    </a>
+    <p style="color: #666; font-size: 0.9em; margin-top: 5px;">
+        Instant access to 50+ advanced prompts, testing tools & updates
+    </p>
+</div>
+```
+
+---
 
 ## 🚀 Quick Start
 
