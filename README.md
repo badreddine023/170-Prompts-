@@ -5,9 +5,8 @@
 
 ## 📑 Table of Contents
 - [Features](#-why-this-collection)
-- [Categories](#-prompt-categories)
+- [Prompt Categories](#-prompt-categories)
 - [Quick Start](#-quick-start)
-- [Usage Examples](#-usage-examples)
 - [Contributing](#-contributing)
 - [License](#-license)
 
