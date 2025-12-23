@@ -1,8 +1,15 @@
-
 ```markdown
 # 🚀 170+ Expert ChatGPT Prompts Collection
 
 > Professional prompt library for strategists, developers, marketers, and content creators. Transform ChatGPT into your expert assistant.
+
+## 📑 Table of Contents
+- [Features](#-why-this-collection)
+- [Categories](#-prompt-categories)
+- [Quick Start](#-quick-start)
+- [Usage Examples](#-usage-examples)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## ✨ Why This Collection?
 
@@ -59,6 +66,12 @@ The "Advanced Research" category contains samples from our specialized toolkit f
 💎 Looking for cutting-edge AI research tools? Check out our Ultimate Jailbreak Prompts Toolkit for premium tools and methodologies.
 
 ⭐ Star this repo if you find it useful!
+
+## 📄 License
+
+This repository is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
+
+The premium version is available under separate commercial licensing.
 
 ```
 
