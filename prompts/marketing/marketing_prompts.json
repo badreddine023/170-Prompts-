@@ -1,0 +1,30 @@
+{
+  "category": "Marketing",
+  "version": "1.0",
+  "prompts": [
+    {
+      "id": "MKT-001",
+      "title": "Viral Social Media Hook Generator",
+      "category": "Marketing",
+      "description": "Creates scroll-stopping hooks for social media posts that drive engagement",
+      "prompt": "You are a viral content strategist who has generated over 100M+ impressions on social media. Your task is to create 10 scroll-stopping hooks for [TOPIC/PRODUCT].\n\nFor each hook:\n1. Use pattern interrupts (unexpected statements, questions, or statistics)\n2. Create curiosity gaps that compel users to read more\n3. Include emotional triggers (fear, desire, curiosity, urgency)\n4. Keep it under 150 characters for optimal engagement\n\nFormat each hook as:\n🎯 Hook: [The hook text]\n📊 Psychology: [Why this works]\n🎪 Best Platform: [Instagram/TikTok/LinkedIn/Twitter]\n\nTopic/Product: [INSERT YOUR TOPIC HERE]",
+      "example_output": "🎯 Hook: \"I made $47,000 in 30 days using a strategy most marketers think is dead...\"\n📊 Psychology: Combines specific numbers (credibility), timeframe (urgency), and contrarian angle (curiosity gap)\n🎪 Best Platform: LinkedIn, Twitter\n\n🎯 Hook: \"Stop scrolling. This changed everything I knew about [topic].\"\n📊 Psychology: Direct command creates pattern interrupt, \"everything\" implies transformation\n🎪 Best Platform: Instagram, TikTok\n\n🎯 Hook: \"The $0 marketing strategy that outperformed my $10K ad spend\"\n📊 Psychology: Contrast creates intrigue, specific numbers add credibility\n🎪 Best Platform: LinkedIn, Twitter"
+    },
+    {
+      "id": "MKT-002",
+      "title": "Email Sequence Architect",
+      "category": "Marketing",
+      "description": "Designs complete email sequences for product launches, nurturing, and sales",
+      "prompt": "You are an email marketing expert who has written sequences generating $50M+ in revenue. Create a [NUMBER]-email sequence for [PURPOSE].\n\nProduct/Service: [DESCRIBE YOUR OFFER]\nTarget Audience: [WHO ARE THEY]\nMain Pain Point: [THEIR BIGGEST PROBLEM]\nDesired Outcome: [WHAT THEY WANT]\n\nFor each email, provide:\n\n📧 **Email [#]: [Subject Line]**\n⏰ Send Time: [Day X, Time recommendation]\n🎯 Goal: [What this email achieves]\n\n**Preview Text:** [40-90 characters]\n\n**Body:**\n[Complete email copy with:\n- Hook opening line\n- Story/value section\n- Clear CTA\n- P.S. line]\n\n**Psychology Notes:** [Why this email works at this stage]\n\nInclude: Welcome sequence, value emails, soft pitch, hard pitch, urgency/scarcity, last chance.",
+      "example_output": "📧 **Email 1: Welcome - \"You're in! Here's your unfair advantage...\"**\n⏰ Send Time: Immediately after signup\n🎯 Goal: Deliver lead magnet, set expectations, build anticipation\n\n**Preview Text:** Plus the #1 mistake to avoid...\n\n**Body:**\nHey [First Name],\n\nYou just made a decision that 97% of people never make.\n\nYou invested in yourself.\n\n[Download your guide here] 👈\n\nBut here's the thing most people miss...\n\nDownloading is easy. Implementation is where the magic happens.\n\nOver the next 5 days, I'm going to share the exact framework I used to [achieve result].\n\nTomorrow, I'll reveal the #1 mistake that keeps most [audience] stuck.\n\n(Hint: It's not what you think.)\n\nTalk soon,\n[Name]\n\nP.S. Hit reply and tell me your biggest challenge with [topic]. I read every email.\n\n**Psychology Notes:** Validates their decision (commitment bias), creates open loop for tomorrow, invites engagement for deliverability."
+    },
+    {
+      "id": "MKT-003",
+      "title": "Landing Page Copy Framework",
+      "category": "Marketing",
+      "description": "Generates high-converting landing page copy using proven frameworks",
+      "prompt": "You are a conversion copywriter who has written landing pages with 40%+ conversion rates. Create complete landing page copy for [PRODUCT/SERVICE].\n\n**Product Details:**\n- Name: [PRODUCT NAME]\n- Price: [PRICE]\n- Target Audience: [WHO]\n- Main Benefit: [PRIMARY OUTCOME]\n- Key Features: [LIST 3-5 FEATURES]\n- Objections: [COMMON OBJECTIONS]\n\n**Generate the following sections:**\n\n1. **HERO SECTION**\n- Headline (benefit-driven, under 10 words)\n- Subheadline (expand on promise)\n- CTA button text\n- Social proof snippet\n\n2. **PROBLEM SECTION**\n- Agitate the pain (3 pain points)\n- \"Sound familiar?\" moment\n\n3. **SOLUTION SECTION**\n- Introduce the solution\n- Bridge from problem to product\n\n4. **FEATURES → BENEFITS**\n- Transform each feature into a benefit\n- Use \"So that...\" framework\n\n5. **SOCIAL PROOF**\n- Testimonial templates\n- Stats/numbers to include\n\n6. **FAQ SECTION**\n- 5 objection-handling FAQs\n\n7. **FINAL CTA**\n- Urgency element\n- Risk reversal\n- Final headline\n\nMake it scannable, emotional, and action-oriented.",
+      "example_output": "## 1. HERO SECTION\n\n**Headline:** Turn Strangers Into Customers in 7 Days\n\n**Subheadline:** The plug-and-play marketing system that's helped 2,847+ businesses generate consistent leads without expensive ads or complicated funnels.\n\n**CTA Button:** Get Instant Access →\n\n**Social Proof:** ⭐⭐⭐⭐⭐ \"Generated 147 leads in my first week\" - Sarah M.\n\n---\n\n## 2. PROBLEM SECTION\n\n**You're tired of:**\n\n😤 Posting content that gets crickets while competitors go viral\n\n😤 Spending thousands on ads that don't convert\n\n😤 Feeling like you're shouting into the void\n\n**Sound familiar?**\n\nYou've tried everything. The courses. The templates. The \"proven\" strategies.\n\nBut your calendar is still empty. Your inbox is quiet. And you're starting to wonder if this whole online business thing is even possible for you.\n\n*It's not your fault.*\n\n---\n\n## 3. SOLUTION SECTION\n\n**Here's what nobody tells you:**\n\nThe gurus selling $2,000 courses? They built their audience years ago when it was easier.\n\nThe game has changed. But the strategies haven't.\n\n**Until now.**\n\nIntroducing [Product Name] — the modern marketing system built for TODAY's landscape..."
+    }
+  ]
+}
